@@ -6,19 +6,23 @@ GardenGuard is a plant disease detection project with a Colab-based training not
 
 Click the image below to watch the demo:
 
-[![Garden Guard Demo](https://img.youtube.com/shorts/i9WkSNy3jGY/maxresdefault.jpg)](https://youtube.com/shorts/i9WkSNy3jGY)
+[![Garden Guard Demo](https://img.youtube.com/vi/i9WkSNy3jGY/hqdefault.jpg)](https://youtube.com/shorts/i9WkSNy3jGY)
 
 ## Repository Structure
 
+```text
 .
 ├── training_files/
-│   └── GardenGaurd_Training.ipynb   # Model training & ONNX export pipeline
-├── garden_gaurd_app/                # Flutter Project Root
-│   ├── assets/models/
-│   │   └── plant_model.onnx         # Deployed production model
+│   └── GardenGuard_Training.ipynb   # Model training & ONNX export pipeline
+├── garden_guard_app/                # Flutter Project Root
+│   ├── assets/
+│   │   └── models/
+│   │       └── plant_model.onnx     # Deployed production model
 │   ├── lib/                         # Application source code
 │   └── pubspec.yaml                 # Asset & dependency declarations
+├── field_test_images.zip            # Manually collected field validation data
 └── README.md
+```
 
 ## Code Structure
 
