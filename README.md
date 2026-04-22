@@ -2,6 +2,24 @@
 
 GardenGuard is a plant disease detection project with a Colab-based training notebook and a Flutter app for inference.
 
+## Demo Video
+
+Click the image below to watch the demo:
+
+[![Garden Guard Demo](https://img.youtube.com/shorts/i9WkSNy3jGY/maxresdefault.jpg)](https://youtube.com/shorts/i9WkSNy3jGY)
+
+## Repository Structure
+
+.
+├── training_files/
+│   └── GardenGaurd_Training.ipynb   # Model training & ONNX export pipeline
+├── garden_gaurd_app/                # Flutter Project Root
+│   ├── assets/models/
+│   │   └── plant_model.onnx         # Deployed production model
+│   ├── lib/                         # Application source code
+│   └── pubspec.yaml                 # Asset & dependency declarations
+└── README.md
+
 ## Code Structure
 
 - [training_files/GardenGaurd_Training.ipynb](training_files/GardenGaurd_Training.ipynb) contains the training workflow, including dataset download, preprocessing, model training, and model packaging.
@@ -57,7 +75,7 @@ Use Google Colab to run the training notebook instead of a local Python environm
 
 - The PlantVillage dataset is downloaded automatically by the notebook from Kaggle.
 - The app model is already bundled in the repository at [garden_gaurd_app/assets/models/plant_model.onnx](garden_gaurd_app/assets/models/plant_model.onnx), so no extra model download is needed to run the app.
-- If you retrain in Colab, copy the new ONNX model into [garden_gaurd_app/assets/models/plant_model.onnx](garden_gaurd_app/assets/models/plant_model.onnx) before running the Flutter app.
+- If you want to use your own model trained in Colab, copy the new ONNX model into [garden_gaurd_app/assets/models/plant_model.onnx](garden_gaurd_app/assets/models/plant_model.onnx) before running the Flutter app.
 
 ## Run The Flutter App
 
