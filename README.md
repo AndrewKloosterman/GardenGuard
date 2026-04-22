@@ -2,9 +2,10 @@
 
 GardenGuard is a Flutter app that predicts plant leaf diseases from images using an ONNX model.
 
-This repository contains two parts:
+This repository contains three parts:
 - Model training pipeline in [training_files/train.py](training_files/train.py)
-- Flutter app in [garden_gaurd](garden_gaurd)
+- Flutter app in [garden_gaurd_app](garden_gaurd_app)
+- Field Images for Real-World Testing
 
 ## Prerequisites
 
@@ -26,15 +27,7 @@ pip install -r training_files/requirements.txt
 
 3. Configure Kaggle credentials (only needed when downloading dataset automatically).
 
-Option A: kaggle.json file
-
-```bash
-mkdir -p ~/.kaggle
-mv kaggle.json ~/.kaggle/kaggle.json
-chmod 600 ~/.kaggle/kaggle.json
-```
-
-Option B: environment variables
+Set environment variables
 
 ```bash
 export KAGGLE_USERNAME="your_username"
