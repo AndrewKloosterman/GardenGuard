@@ -81,6 +81,34 @@ Use Google Colab to run the training notebook instead of a local Python environm
 - The app model is already bundled in the repository at [garden_gaurd_app/assets/models/plant_model.onnx](garden_gaurd_app/assets/models/plant_model.onnx), so no extra model download is needed to run the app.
 - If you want to use your own model trained in Colab, copy the new ONNX model into [garden_gaurd_app/assets/models/plant_model.onnx](garden_gaurd_app/assets/models/plant_model.onnx) before running the Flutter app.
 
+## Install Flutter
+
+Install Flutter before running the app in [garden_gaurd_app](garden_gaurd_app).
+
+1. Download the Flutter SDK from https://docs.flutter.dev/get-started/install.
+2. Follow the instructions for your operating system (Windows, macOS, or Linux).
+3. Add the Flutter `bin` folder to your system `PATH`.
+4. Open a new terminal and verify installation:
+
+```bash
+flutter --version
+flutter doctor
+```
+
+5. Resolve all issues reported by `flutter doctor`, especially:
+- Android toolchain setup (Android Studio + SDK)
+- Connected device setup (emulator or physical device)
+- License acceptance with `flutter doctor --android-licenses` (Android only)
+
+### Windows Quick Setup
+
+1. Download the Flutter SDK zip for Windows.
+2. Extract it to a stable location such as `C:\src\flutter`.
+3. Add `C:\src\flutter\bin` to the user `Path` environment variable.
+4. Install Android Studio and the Android SDK.
+5. In Android Studio, install the Flutter and Dart plugins.
+6. Run `flutter doctor` again and fix any remaining warnings.
+
 ## Run The Flutter App
 
 If you want to test the mobile or desktop app after training, use the Flutter project in [garden_gaurd_app](garden_gaurd_app).
