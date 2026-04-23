@@ -2,8 +2,6 @@
 
 GardenGuard is a plant disease detection project with a Colab-based training notebook and a Flutter app for inference.
 
-This demo is intended for Windows only; other platforms are not officially tested for the app workflow.
-
 ## Demo Video
 
 Click the image below to watch the demo!
@@ -128,8 +126,8 @@ flutter doctor
 
 ## Run The Flutter App
 
-If you want to test the app after training, use the Flutter project in [garden_guard_app](garden_guard_app).
-For this demo, use Windows or Android emulator (Android devices set to "Developer Mode" also work with plug-in); Linux is not officially supported for the app workflow.
+If you want to test the app after training, use the Flutter project in [garden_guard_app](garden_guard_app).  
+For this demo, use Windows (or Windows emulator) or an Android emulator. Physical Android devices also work when connected via USB with Developer Mode and USB debugging enabled. Linux is not officially supported for the app workflow.
 
 1. Open a terminal in [garden_guard_app](garden_guard_app).
 2. Run `flutter pub get`.
@@ -138,8 +136,7 @@ For this demo, use Windows or Android emulator (Android devices set to "Develope
 
 
 ## Run Field Tests
-If you want to test the app after training, use the Flutter project in [garden_guard_app](garden_guard_app).  
-For this demo, use Windows or an Android emulator. Physical Android devices also work when connected via USB with Developer Mode and USB debugging enabled. Linux is not officially supported for the app workflow.
+To evaluate the app on real-world images, use the manually collected samples in [training_files/field_test_images.zip](training_files/field_test_images.zip). These images were chosen to better reflect field conditions than lab-curated data.
 
 1. Extract [training_files/field_test_images.zip](training_files/field_test_images.zip) into a folder on your computer.
 2. Start the app with `flutter run` and wait for it to open on your selected device.
